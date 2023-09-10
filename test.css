@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: calc(
+    33.33% - 20px
+  ); /* Adjusted width to fit three divs on each line */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .box {
+    width: 100%; /* Full width for small screens */
+    display: none;
+  }
+
+  .box.active {
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

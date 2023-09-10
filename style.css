@@ -192,10 +192,22 @@ nav {
   border-radius: 10px;
   position: relative;
 }
-#sæson_navn {
+.sæson_navn {
   position: relative;
   color: #f07041;
   margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.råvare_container {
+  margin: 0;
+  padding: 0;
 }
 
 .råvare_overblik {
@@ -205,15 +217,15 @@ nav {
   justify-content: center;
 }
 
-#opskrift_button img {
+.opskrift_button img {
   max-width: 35%;
 }
-
-.råvare_container {
+.background_råvare {
   background-color: #b3c988;
   padding: 1rem;
   width: 400px; /* Set your desired fixed width for larger screens */
   margin: 0 auto; /* Center horizontally by using auto margins */
+  border-radius: 10px 10px 0 0;
 }
 
 .two_box_container {
@@ -233,6 +245,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 400px; /* Set your desired fixed width for larger screens */
+  margin: 0 auto; /* Center horizontally by using auto margins */
+  border-radius: 10px 10px 0 0;
 }
 
 /* Skjul al indhold undtagen det første */
@@ -248,29 +264,40 @@ nav {
 /* Tilføj stilarter til fanerne (valgfrit) */
 .tab {
   cursor: pointer;
-  padding: 10px 15px; /* Add padding for spacing */
+  padding: 6px 1px;
+  width: 100px; /* Set the desired fixed width for each tab */
+  text-align: center;
+  height: 50px;
+  margin: 0; /* Remove any margin that might affect positioning */
+}
+
+.brug-sanserne-tab,
+.find-dem-tab,
+.gode-rad-tab,
+.advarsel-tab {
+  width: 100px;
 }
 
 /* Tilføj yderligere stilarter som baggrundsfarver, tekstfarver, etc. efter behov */
 
 /* Define custom tab classes with different colors */
 .find-dem-tab,
-#find_dem_content {
+.find_dem_content {
   background-color: #45a175; /* Example color */
 }
 
 .brug-sanserne-tab,
-#brug_sanserne_content {
+.brug_sanserne_content {
   background-color: #b9d047; /* Example color */
 }
 
 .gode-rad-tab,
-#gode_råd_content {
+.gode_råd_content {
   background-color: #fbbd76; /* Example color */
 }
 
 .advarsel-tab,
-#advarsel_content {
+.advarsel_content {
   background-color: #f18d68; /* Example color */
 }
 
@@ -278,33 +305,45 @@ nav {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  width: 100%; /* Set the width you desire */
-  max-width: 500px; /* Set the maximum width you desire */
+  width: 400px; /* Set the width you desire */
+  max-width: 400px; /* Set the maximum width you desire */
   margin: 0 auto; /* Center horizontally */
-  padding: 12px; /* Add padding for spacing */
+  padding: 0px; /* Add padding for spacing */
   box-sizing: border-box; /* Include padding and borders in the width */
   margin-top: 0; /* Remove top margin */
   padding-top: 0; /* Remove top padding */
 }
 
 .tab-content {
-  max-width: 401px;
-
+  width: 400px;
+  border-radius: 0 0 10px 10px;
   padding: 10px; /* Add some padding for spacing */
-  width: 100%; /* Set the width to 100% */
-  box-sizing: border-box; /* Include padding and borders in the width */
+
+  /* Include padding and borders in the width */
 }
 
+.lille_illustration {
+  max-width: 300px;
+  height: auto;
+  margin: -30px;
+}
 
+.billed_1 img {
+  max-width: 100%; /* Adjust the percentage as needed */
+  max-height: 400px;
+  margin: 1rem 0;
+}
 
-
+.pil {
+  margin-top: 1rem;
+}
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #dddc90;
-  padding: 2.2rem;
+  padding: 2rem 2rem 1rem 2rem;
   width: 100%;
   max-width: 600px;
   margin: 2rem auto; /* Center horizontally */
@@ -319,7 +358,9 @@ form {
 }
 
 .input-group {
-  flex-basis: calc(50% - 10px); /* 50% width for each group with a little spacing */
+  flex-basis: calc(
+    50% - 10px
+  ); /* 50% width for each group with a little spacing */
   margin-bottom: 10px;
 }
 
@@ -328,7 +369,6 @@ form {
   display: block;
   width: 100%;
 }
-
 
 .quiz-question-group {
   display: flex;
@@ -361,11 +401,31 @@ button {
 
 /* ... (your existing CSS styles) ... */
 
-
 /* ... (your existing CSS styles) ... */
 
-
 /* CSS */
+/* Add this CSS to your style.css file or in a <style> tag in your HTML */
+/* Add this CSS to your style.css file or in a <style> tag in your HTML */
+.custom-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.custom-button img {
+  display: block; /* Ensure the image takes the full button width */
+  width: 60%; /* Make the image width 100% of the button */
+  height: auto; /* Maintain image aspect ratio */
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.download_container img {
+  grid-column: 1fr;
+  max-width: 100%;
+  width: 120px;
+  margin: 1rem;
+}
 
 footer {
   background-color: #707070;
@@ -405,12 +465,11 @@ footer {
     text-align: center;
     z-index: 1;
     padding: 0.5rem;
-    
   }
   .nav-links a {
     text-decoration: none;
     color: white;
-    
+
     font-size: 1.4rem;
   }
 
@@ -418,7 +477,6 @@ footer {
     color: #7fac55; /* Change the text color on hover to your desired color */
     transition: color 0.2s; /* Add a smooth color transition effect */
   }
-
 
   .nav-links.show {
     display: flex; /* Show navigation when the show class is added */
@@ -429,7 +487,6 @@ footer {
     flex-direction: column;
     cursor: pointer;
     padding: 10px; /* Add some padding for touch/click accessibility */
-   
   }
 }
 
@@ -438,5 +495,37 @@ footer {
     width: 20vh; /* Increase the width of the images on larger screens */
     flex: 0 0 calc(20% - 30px); /* Adjust the width for larger screens */
     margin-right: 30px; /* Increase the spacing between images for larger screens */
+  }
+  .billed_1 img {
+    max-width: 80%; /* Adjust the percentage as needed */
+    max-height: 400px;
+    margin: 2rem 0;
+  }
+
+  .box {
+    margin: 2px;
+    padding: 20px;
+  }
+
+  .buttons {
+    margin: 2px;
+    display: none;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .box {
+    width: 100%; /* Full width for small screens */
+    display: none;
+  }
+
+  .box.active {
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
   }
 }

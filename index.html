@@ -2,21 +2,28 @@
 <html lang="da">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/jyw8sbg.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jyw8sbg.css" />
   </head>
   <body>
-    <header class="utility-bar"><p>Er du skolelærer? Gå til undervisnings-sitet</p> <a href="https://vildmad.dk/dk/undervisning">her</a> </header>
-    <nav id="nav-wrapper">
+    <header class="utility-bar">
+      <p>Er du skolelærer? Gå til undervisnings-sitet</p>
+      <a href="https://vildmad.dk/dk/undervisning">her</a>
+    </header>
+    <nav class="nav-wrapper">
       <div class="logo">
-        <img src="img/vildmad_boern_logo.svg" alt="logo" id="fixed-logo" />
+        <img src="img/logo_korrekt.svg" alt="logo" id="fixed-logo" />
       </div>
       <ul class="nav-links">
-        <li><a href="https://vildmad.dk/dk">FORSIDE</a></li>
+        <li><a href="index.html">FORSIDE</a></li>
         <li><a href="leksikon.html">LEKSIKON</a></li>
         <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+        <li><a href="https://vildmad.dk/dk">VILDMAD.DK</a></li>
       </ul>
       <div class="hamburger-menu">
         <div class="bar"></div>
@@ -26,237 +33,811 @@
     </nav>
 
     <main>
+      <div class="main_container">
+        <h1>Velkommen til <br />VILD MAD FOR BØRN</h1>
+        <img
+          id="maskotter_img"
+          src="img/vildmad_maskotter_done.svg"
+          alt="maskotter"
+        />
+        <h3 class="h3_overskrift_sæson">Sæson</h3>
+        <div class="sæson_cirkel_container">
+          <img src="img/sæson_cirkel.svg" alt="forår knap" />
+          <img src="img/sæson_cirkel.svg" alt="summer knap" />
+          <img src="img/sæson_cirkel.svg" alt="efterår knap" />
+          <img src="img/sæson_cirkel.svg" alt="vinter knap" />
+        </div>
 
-        <div class="main_container">
-      <h1>Velkommen til <br />VILD MAD FOR BØRN</h1>
-      <img id="maskotter_img" src="img/maskotterne.svg" alt="maskotter" />
-      <h3 class="h3_overskrift_sæson">Sæson</h3>
-      <div class="sæson_cirkel_container">
-      <img src="img/sæson_cirkel.svg" alt="forår knap" />
-      <img src="img/sæson_cirkel.svg" alt="summer knap" />
-      <img src="img/sæson_cirkel.svg" alt="efterår knap" />
-      <img src="img/sæson_cirkel.svg" alt="vinter knap" />
-    </div>
-      
         <div class="sæson_overskrift">
-          <h2 id="sæson_navn">EFTERÅR</h2></div>
-        
-     
-      <div>
-        <div class="frem_tilbage_container">
-        <button class="tilbage">
-          side <span class="span_tilbage">1</span>
-        </button>
-        <h4>HVAD VIL DU SANKE?</h4>
-        <button class="frem">side <span class="span_frem">3</span></button>
-    </div>
+          <h2 class="sæson_navn">EFTERÅR</h2>
+        </div>
 
-    <div class="big_container">
-        <article class="råvare_container">
-<h3>BROMBÆR</h3>
-            <div class="two_box_container">
-            <section class="råvare_overblik">
-          <!--<button>venstre</button>-->
-          <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
-          <!--<button>højre</button>-->
+        <div class="buttons">
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+        </div>
 
-          
-          <div class="råvare_tekst">
-          <p>
-            Der findes tæt på 100 forskellige slags brombær i Danmark – og både
-            smager og ser ret forskelligt ud. For overskuelighedens skyld kalder
-            vi dem alle brombær
-          </p></div> </div>
-          <a id="opskrift_button" href="opskrift.html"><img src="img/opskrift_but.svg" alt="opskrift knap"></a>
-       
-        </section>
-      </article>
+        <div class="container">
+          <div class="box" id="box1">
+            <article class="råvare_container" id="råvare1">
+              <div class="background_råvare">
+                <h3>BROMBÆR 1</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
 
-
-      <div class="tabs">
-        <div class="tab find-dem-tab" id="find_dem_tab">Find dem her</div>
-        <div class="tab brug-sanserne-tab" id="brug_sanserne_tab">Brug sanserne</div>
-        <div class="tab gode-rad-tab" id="gode_råd_tab">Gode råd</div>
-        <div class="tab advarsel-tab" id="advarsel_tab">Advarsel</div>
-      </div>
-      
-      <div class="tab-content-container">
-      <div class="tab-content" id="find_dem_content">
-        <h5>Find dem her</h5>
-              <p>
-                En vildnis af lange grønne ranker, der skyder op ad jorden og
-                ned igen i tornede sammenfiltringer er et tegn på, at du godt
-                kan begynde at glæde dig til brombær. Planten har mørkegrønne
-                blade med hvidlig underside og små torne. Den blomstrer i juni
-                og juli med lyse, rosa blomster, og efter afblomstringen dukker
-                bærrene frem - i virkeligheden en hel masse små frugter, der
-                sidder sammen i tætte klaser. De helt umodne brombær er grønne,
-                derefter røde og endelig - i fuldt modnet tilstand - sorte og
-                saftige.
-              </p>
-      </div>
-      
-      <div class="tab-content" id="brug_sanserne_content">
-        <h5>Brug sanserne</h5>
-              <p>
-                I MUNDEN Umodne brombær er meget sure. De modne bær og skud er
-                krydret, søde og dybe i smagen med et strejf af vanilje. De har
-                et blidt bid med masser af saft. I NÆSEN Brombær dufter sødligt
-                af vanilje.
-
-                
-              </p>
-      </div>
-      
-      <div class="tab-content" id="gode_råd_content">
-        <h5>Gode råd</h5>
-              <p>
-                Husk at tage gode handsker på og helt dækkende tøj, når du skal
-                på brombærjagt - tornene er ikke til at spøge med. Mest normalt
-                er det at gå efter de helt mørkerøde eller sorte bær, men de
-                grønne, umodne brombær kan også bruges. De modne bær skal du
-                helst plukke i tørvejr. Hvis du tager bærrene af stilken, mens
-                det regner, har de en tendens til at blive vandede i
-                konsistensen, og de får lettere til smat. Sæsonens første bær er
-                som regel de bedste - de bliver størst og udvikler mest sødme.
-                Du kan i øvrigt hjælpe brombærplanten med at skyde stærkt og
-                mangfoldigt ved at fjerne de visne skud fra planten, når du
-                plukker.
-              </p>
-      </div>
-      
-      <div class="tab-content" id="advarsel_content">
-        <h5>ADVARSEL</h5>
-              <p>
-                Ingen risiko for farlige forvekslinger, men man kan godt tage
-                fejl af brombær og korbær. Korbærplanten bliver dog ikke lige så
-                stor som brombær og har mindre torne uden brombærrankens
-                karakteristiske runding. Korbær kan sagtens spises, men har ikke
-                brombærrets dybe sødme. Både brombær og korbær indgår ud over
-                det naturligt i en masse forskellige krydsninger med hinanden -
-                og med hindbær - og det er slet ikke usædvanligt at støde på
-                disse til tider meget vellykkede bastarder i skoven.
-                Boysenbærret er en af disse bastarder, der ligner et forvokset
-                brombær, men som har svært ved at følge med smagsmæssigt.
-              </p>
-      </div>
-    </div>
-  </div>
-     
-          <img src="" alt="" />
-        
-          <div class="quiz_container">
-            <h3>Har du styr på naturens råvarer? <br />Prøv vores quiz:</h3>
-            <h5>Vind en tur i skoven og køkkenet med en professionel sanker og kok<br> for dig og din klasse!</h5>
-            <img src="" alt="pil ned mod quiz" />
-            <div id="QUIZ">
-                <form>
-
-                  <div class="quiz_container">
-                    <h3>Har du styr på naturens råvarer? <br />Prøv vores quiz:</h3>
-                    <h5>Vind en tur i skoven og køkkenet med en professionel sanker og kok, for dig og din klasse!</h5>
-                    <img src="" alt="pil ned mod quiz" />
-                  
-                  <div class="input_container">
-                    <div class="input-group">
-                      <label for="fornavn">Navn:</label>
-                      <input type="text" id="fornavn" name="fornavn">
-                    </div>
-                    <div class="input-group">
-                      <label for="skole">Skole:</label>
-                      <input type="text" id="skole" name="skole">
-                    </div>
-                    <div class="input-group">
-                      <label for="klasse">Klasse:</label>
-                      <input type="text" id="klasse" name="klasse">
-                    </div>
-                    <div class="input-group">
-                      <label for="email">E-mail:</label>
-                      <input type="email" id="email" name="email">
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
                     </div>
                   </div>
-                  
-           
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
 
-    <div class="input_container">
-      <div class="quiz-question-group">
-        <div class="quiz-question">
-          <p>Hvilken sæson finder man flest svampe i?</p>
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box" id="box2">
+            <article class="råvare_container" id="råvare2">
+              <div class="background_råvare">
+                <h3>BROMBÆR 2</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
+
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
+                    </div>
+                  </div>
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box" id="box3">
+            <article class="råvare_container" id="råvare3">
+              <div class="background_råvare">
+                <h3>BROMBÆR 3</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
+
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
+                    </div>
+                  </div>
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box" id="box4">
+            <article class="råvare_container" id="råvare4">
+              <div class="background_råvare">
+                <h3>BROMBÆR 4</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
+
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
+                    </div>
+                  </div>
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box" id="box5">
+            <article class="råvare_container" id="råvare5">
+              <div class="background_råvare">
+                <h3>BROMBÆR 5</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
+
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
+                    </div>
+                  </div>
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="box" id="box6">
+            <article class="råvare_container" id="råvare6">
+              <div class="background_råvare">
+                <h3>BROMBÆR 6</h3>
+                <div class="two_box_container">
+                  <div class="råvare_overblik">
+                    <!--<button>venstre</button>-->
+                    <img src="img/VILDMAD_RV_Brombaer_V_10.svg" alt="råvare" />
+                    <!--<button>højre</button>-->
+
+                    <div class="råvare_tekst">
+                      <p>
+                        Der findes tæt på 100 forskellige slags brombær i
+                        Danmark – og både smager og ser ret forskelligt ud. For
+                        overskuelighedens skyld kalder vi dem alle brombær
+                      </p>
+                    </div>
+                  </div>
+                  <a class="opskrift_button" href="opskrift.html"
+                    ><img src="img/opskrift_but.svg" alt="opskrift knap"
+                  /></a>
+                  <div class="ekstra_info">
+                    <h4>måneder og landskab:</h4>
+                    <div class="aktive_måneder">januar, februar</div>
+                    <div class="landskaber">Skov, by</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs">
+                <div class="tab find-dem-tab find_dem_tab">Find dem her</div>
+                <div class="tab brug-sanserne-tab brug_sanserne_tab">
+                  Brug sanserne
+                </div>
+                <div class="tab gode-rad-tab gode_råd_tab">Gode råd</div>
+                <div class="tab advarsel-tab advarsel_tab">Advarsel</div>
+              </div>
+
+              <div class="tab-content-container">
+                <div class="tab-content find_dem_content">
+                  <h5>Find dem her</h5>
+                  <p>
+                    En vildnis af lange grønne ranker, der skyder op ad jorden
+                    og ned igen i tornede sammenfiltringer er et tegn på, at du
+                    godt kan begynde at glæde dig til brombær. Planten har
+                    mørkegrønne blade med hvclasslig undersclasse og små torne.
+                    Den blomstrer i juni og juli med lyse, rosa blomster, og
+                    efter afblomstringen dukker bærrene frem - i virkeligheden
+                    en hel masse små frugter, der sclassder sammen i tætte
+                    klaser. De helt umodne brombær er grønne, derefter røde og
+                    endelig - i fuldt modnet tilstand - sorte og saftige.
+                  </p>
+                </div>
+
+                <div class="tab-content brug_sanserne_content">
+                  <h5>Brug sanserne</h5>
+                  <p>
+                    I MUNDEN Umodne brombær er meget sure. De modne bær og skud
+                    er krydret, søde og dybe i smagen med et strejf af vanilje.
+                    De har et blclasst bclass med masser af saft. I NÆSEN
+                    Brombær dufter sødligt af vanilje.
+                  </p>
+                </div>
+
+                <div class="tab-content gode_råd_content">
+                  <h5>Gode råd</h5>
+                  <p>
+                    Husk at tage gode handsker på og helt dækkende tøj, når du
+                    skal på brombærjagt - tornene er ikke til at spøge med. Mest
+                    normalt er det at gå efter de helt mørkerøde eller sorte
+                    bær, men de grønne, umodne brombær kan også bruges. De modne
+                    bær skal du helst plukke i tørvejr. Hvis du tager bærrene af
+                    stilken, mens det regner, har de en tendens til at blive
+                    vandede i konsistensen, og de får lettere til smat. Sæsonens
+                    første bær er som regel de bedste - de bliver størst og
+                    udvikler mest sødme. Du kan i øvrigt hjælpe brombærplanten
+                    med at skyde stærkt og mangfoldigt ved at fjerne de visne
+                    skud fra planten, når du plukker.
+                  </p>
+                </div>
+
+                <div class="tab-content advarsel_content">
+                  <h5>ADVARSEL</h5>
+                  <p>
+                    Ingen risiko for farlige forvekslinger, men man kan godt
+                    tage fejl af brombær og korbær. Korbærplanten bliver dog
+                    ikke lige så stor som brombær og har mindre torne uden
+                    brombærrankens karakteristiske runding. Korbær kan sagtens
+                    spises, men har ikke brombærrets dybe sødme. Både brombær og
+                    korbær indgår ud over det naturligt i en masse forskellige
+                    krydsninger med hinanden - og med hindbær - og det er slet
+                    ikke usædvanligt at støde på disse til tclasser meget
+                    vellykkede bastarder i skoven. Boysenbærret er en af disse
+                    bastarder, der ligner et forvokset brombær, men som har
+                    svært ved at følge med smagsmæssigt.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="quiz-options">
-          <input type="radio" id="forar" name="season" value="Forår">
-          <label for="forar">Forår</label>
-          <input type="radio" id="sommer" name="season" value="Sommer">
-          <label for="sommer">Sommer</label>
-          <input type="radio" id="efterar" name="season" value="Efterår">
-          <label for="efterar">Efterår</label>
-          <input type="radio" id="vinter" name="season" value="Vinter">
-          <label for="vinter">Vinter</label>
+
+        <img
+          class="lille_illustration"
+          src="img/gren.svg"
+          alt="en lille gren"
+        />
+        <div class="billed_1">
+          <img src="img/VILDMAD_RV_Kantareller_03.png" alt="" />
         </div>
-      </div>
 
-      <!-- Repeat the same structure for other quiz questions -->
-      
-      <div class="quiz-question-group">
-        <div class="quiz-question">
-          <p>Hvilken af disse er normalt ikke spiselige?</p>
-        </div>
-        <div class="quiz-options">
-          <input type="radio" id="skovsyre" name="not_edible" value="Skovsyre">
-          <label for="skovsyre">Skovsyre</label>
-          <input type="radio" id="hyldeblomst" name="not_edible" value="Hyldeblomst">
-          <label for="hyldeblomst">Hyldeblomst</label>
-          <input type="radio" id="bark" name="not_edible" value="Bark">
-          <label for="bark">Bark</label>
-          <input type="radio" id="braendnaelde" name="not_edible" value="Brændnælde">
-          <label for="braendnaelde">Brændnælde</label>
-        </div>
-      </div>
+        <h3>Har du styr på naturens råvarer? <br />Prøv vores quiz:</h3>
+        <h5>
+          Vind en tur i skoven og køkkenet med en professionel sanker og kok,
+          for dig og din klasse!
+        </h5>
+        <img class="pil" src="img/pil2.svg" alt="pil ned mod quiz" />
 
-      <!-- Repeat the same structure for other quiz questions -->
-      
-    </div>
+        <form>
+          <div class="QUIZ">
+            <div class="quiz_container">
+              <div class="input_container">
+                <div class="input-group">
+                  <label for="fornavn">Navn:</label>
+                  <input type="text" class="fornavn" name="fornavn" />
+                </div>
+                <div class="input-group">
+                  <label for="skole">Skole:</label>
+                  <input type="text" class="skole" name="skole" />
+                </div>
+                <div class="input-group">
+                  <label for="klasse">Klasse:</label>
+                  <input type="text" class="klasse" name="klasse" />
+                </div>
+                <div class="input-group">
+                  <label for="email">E-mail:</label>
+                  <input type="email" class="email" name="email" />
+                </div>
+              </div>
 
-    <div class="quiz-question-group">
-      <div class="quiz-question">
-        <p>Hvad er godt at gøre når man sanker?</p>
-      </div>
-      <div class="quiz-options">
-        <input type="radio" id="godt" name="sank_tips" value="Godt">
-        <label for="godt">Kun at tage det man skal bruge, og efterlade nok til naturen og andre</label><br>
-        <input type="radio" id="ikke_godt" name="sank_tips" value="Ikke godt">
-        <label for="ikke_godt">Tage ALT hvad man kan finde, så andre ikke kan få noget</label>
-      </div>
-    </div>
+              <div class="input_container">
+                <div class="quiz-question-group">
+                  <div class="quiz-question">
+                    <p>Hvilken sæson finder man flest svampe i?</p>
+                  </div>
+                  <div class="quiz-options">
+                    <input
+                      type="radio"
+                      class="forar"
+                      name="season"
+                      value="Forår"
+                    />
+                    <label for="forar">Forår</label>
+                    <input
+                      type="radio"
+                      class="sommer"
+                      name="season"
+                      value="Sommer"
+                    />
+                    <label for="sommer">Sommer</label>
+                    <input
+                      type="radio"
+                      class="efterar"
+                      name="season"
+                      value="Efterår"
+                    />
+                    <label for="efterar">Efterår</label>
+                    <input
+                      type="radio"
+                      class="vinter"
+                      name="season"
+                      value="Vinter"
+                    />
+                    <label for="vinter">Vinter</label>
+                  </div>
+                </div>
 
-    <!-- Repeat the same structure for other quiz questions -->
+                <!-- Repeat the same structure for other quiz questions -->
 
-    <button>Send svar</button>
-  </form>
-</div>
+                <div class="quiz-question-group">
+                  <div class="quiz-question">
+                    <p>Hvilken af disse er normalt ikke spiselige?</p>
+                  </div>
+                  <div class="quiz-options">
+                    <input
+                      type="radio"
+                      class="skovsyre"
+                      name="not_edible"
+                      value="Skovsyre"
+                    />
+                    <label for="skovsyre">Skovsyre</label>
+                    <input
+                      type="radio"
+                      class="hyldeblomst"
+                      name="not_edible"
+                      value="Hyldeblomst"
+                    />
+                    <label for="hyldeblomst">Hyldeblomst</label>
+                    <input
+                      type="radio"
+                      class="bark"
+                      name="not_edible"
+                      value="Bark"
+                    />
+                    <label for="bark">Bark</label>
+                    <input
+                      type="radio"
+                      class="braendnaelde"
+                      name="not_edible"
+                      value="Brændnælde"
+                    />
+                    <label for="braendnaelde">Brændnælde</label>
+                  </div>
+                </div>
 
-        </div>
-    
+                <!-- Repeat the same structure for other quiz questions -->
+              </div>
+
+              <div class="quiz-question-group">
+                <div class="quiz-question">
+                  <p>Hvad er godt at gøre, når man sanker?</p>
+                </div>
+                <div class="quiz-options">
+                  <input
+                    type="radio"
+                    class="godt"
+                    name="sank_tips"
+                    value="Godt"
+                  />
+                  <label for="godt"
+                    >Kun at tage det man skal bruge, og efterlade nok til
+                    naturen og andre</label
+                  ><br />
+                  <input
+                    type="radio"
+                    class="ikke_godt"
+                    name="sank_tips"
+                    value="Ikke godt"
+                  />
+                  <label for="ikke_godt"
+                    >Tage ALT hvad man kan finde, så andre ikke kan få
+                    noget</label
+                  >
+                </div>
+              </div>
+
+              <!-- Repeat the same structure for other quiz questions -->
+
+              <button class="custom-button">
+                <img src="img/sendsvar_but.svg" alt="send svar knap" />
+              </button>
+            </div>
+          </div>
+        </form>
+
         <div class="download_container">
           <h5>DOWNLOAD VORES APP HER</h5>
-          <button>App Store</button>
-          <button>Google Play</button>
+          <a href="https://apps.apple.com/dk/app/vild-mad/id1230602644?l=da"
+            ><img src="img/app-store-badge.svg" alt="app store badge"
+          /></a>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=dk.vildmad.sankeapp&hl=da&gl=US"
+            ><img src="img/google-play-badge.svg" alt="google play badge"
+          /></a>
         </div>
-        <img src="" alt="lille sød illustration" />
+        <img src="img/phone.svg" alt="lille sød illustration" />
       </div>
     </main>
-</div>
-<footer>
-    <p class="footer-text">
-      DEL DINE FUND OG EVENTYR MED OS OG DINE VENNER: 
-      <br>tag @vildmad og brug
-      hashtagget #vildmad og #minsanketur
-    </p>
-    <div class="footer-icons">
-      <img src="img/instagram.svg" alt="instagram" />
-      <img src="img/facebook.svg" alt="facebook" />
-    </div>
-  </footer>
+
+    <footer>
+      <p class="footer-text">
+        DEL DINE FUND OG EVENTYR MED OS OG DINE VENNER:
+        <br />tag @vildmad og brug hashtagget #vildmad og #minsanketur
+      </p>
+      <div class="footer-icons">
+        <img src="img/instagram.svg" alt="instagram" />
+        <img src="img/facebook.svg" alt="facebook" />
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

@@ -427,6 +427,10 @@ button {
   margin: 1rem;
 }
 
+.phone_img {
+  width: 50%;
+}
+
 footer {
   background-color: #707070;
   color: white;

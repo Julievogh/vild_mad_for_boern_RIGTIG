@@ -35,26 +35,39 @@ tabs.forEach((tab, index) => {
   });
 });
 
-// script.js
+// Hent alle bokse med klassen "box"
 const boxes = document.querySelectorAll(".box");
+
+// Hent knapperne med ID'erne "prev" og "next"
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
+
+// Initialiser variablen currentIndex til 0
 let currentIndex = 0;
 
-function showBox(index) {
+// Funktion til at vise en bestemt boks ved at ændre dens klasse til "active"
+function visBoks(index) {
+  // Fjern "active" klassen fra alle bokse
   boxes.forEach((box) => box.classList.remove("active"));
+  // Tilføj "active" klassen til den valgte boks
   boxes[index].classList.add("active");
 }
 
+// Lyt efter klik på "prev" knappen
 prevButton.addEventListener("click", () => {
+  // Beregn det nye index for den foregående boks
   currentIndex = (currentIndex - 1 + boxes.length) % boxes.length;
-  showBox(currentIndex);
+  // Vis den boks med det nye index
+  visBoks(currentIndex);
 });
 
+// Lyt efter klik på "next" knappen
 nextButton.addEventListener("click", () => {
+  // Beregn det nye index for den næste boks
   currentIndex = (currentIndex + 1) % boxes.length;
-  showBox(currentIndex);
+  // Vis den boks med det nye index
+  visBoks(currentIndex);
 });
 
-// Show the first box by default on small screens
-showBox(currentIndex);
+// Vis den første boks som standard på små skærme
+visBoks(currentIndex);
